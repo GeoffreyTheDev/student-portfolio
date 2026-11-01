@@ -11,12 +11,20 @@
   border-bottom: 1px solid #1e293b;
 }
 
-/* This styles your name to look like a modern logo */
+/* This styles your name to look like a modern clickable logo */
 .nav-brand .logo-text {
   font-size: 1.8rem;
   font-weight: 800;
   color: #f8fafc;
   letter-spacing: -0.5px;
+  text-decoration: none; /* Removes the default link underline */
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+/* Adds a subtle fade when hovering over your name */
+.nav-brand .logo-text:hover {
+  opacity: 0.85;
 }
 
 .nav-brand .highlight-dot {
@@ -35,6 +43,7 @@
   font-size: 1.1rem;
   padding: 8px 12px;
   border-radius: 6px;
+  text-decoration: none; /* Ensures nav links don't have underlines */
   transition: all 0.3s ease;
 }
 

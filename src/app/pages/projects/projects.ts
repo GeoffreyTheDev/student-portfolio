@@ -5,30 +5,9 @@ import { CommonModule } from '@angular/common';
   selector: 'app-projects',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './projects.html'
+  templateUrl: './projects.html',
+  styleUrls: ['./projects.css']
 })
-export class Projects {
-  search = '';
-
-  projects = [
-    {
-      name: 'Student Management System',
-      description: 'Web-based student registration system',
-      likes: 0
-    },
-    {
-      name: 'Library Management System',
-      description: 'Book tracking application',
-      likes: 0
-    },
-    {
-      name: 'AI Tutor',
-      description: 'Learning support chatbot',
-      likes: 0
-    }
-  ];
-
-  like(project: any) {
-    project.likes++;
-  }
+export class Projects { 
+  // Component logic can go here if needed in the future
 }
